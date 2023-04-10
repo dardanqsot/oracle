@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.9.14" id="shortHistoryType"
+          Package="InitEmployeeRegisterationUI_InitEmployeeRegisteration"
+          BeanClass="InitEmployeeRegisterationUI_InitEmployeeRegisteration.shortHistoryType" isJavaBased="false">
+  <AccessorAttribute id="task" IsCollection="true"
+                     BeanClass="InitEmployeeRegisterationUI_InitEmployeeRegisteration.shortHistoryTaskType"
+                     CollectionBeanClass="InitEmployeeRegisterationUI_InitEmployeeRegisteration.shortHistoryTaskType_task_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="0"/>
+      <Property Name="maxOccurs" Value="2147483640"/>
+      <Property Name="LABEL" Value="Task"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="task"/>
+      <Property Name="targetNamespace" Value="http://xmlns.oracle.com/bpel/workflow/task"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

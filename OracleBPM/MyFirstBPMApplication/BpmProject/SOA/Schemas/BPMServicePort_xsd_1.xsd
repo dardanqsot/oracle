@@ -1,0 +1,14 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xs:schema xmlns:tns="http://project1/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0"
+     targetNamespace="http://project1/">
+    <xs:element name="insertNewEmployee" type="tns:insertNewEmployee"/>
+    <xs:complexType name="insertNewEmployee">
+        <xs:sequence>
+            <xs:element name="empName" type="xs:string" minOccurs="0"/>
+            <xs:element name="empPosition" type="xs:string" minOccurs="0"/>
+            <xs:element name="salary" type="xs:double" minOccurs="0"/>
+            <xs:element name="deptName" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
+<!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Oracle JAX-WS 2.1.5. -->

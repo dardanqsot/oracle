@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.9.14" id="preActionUserStepsType"
+          Package="ApprovalUI_ApprovalHumanTask" BeanClass="ApprovalUI_ApprovalHumanTask.preActionUserStepsType"
+          isJavaBased="false">
+  <AccessorAttribute id="preActionUserStep" IsCollection="true"
+                     BeanClass="ApprovalUI_ApprovalHumanTask.preActionUserStepType"
+                     CollectionBeanClass="ApprovalUI_ApprovalHumanTask.preActionUserStepType_preActionUserStep_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="0"/>
+      <Property Name="maxOccurs" Value="2147483640"/>
+      <Property Name="LABEL" Value="Pre Action User Step"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="preActionUserStep"/>
+      <Property Name="targetNamespace" Value="http://xmlns.oracle.com/bpel/workflow/task"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

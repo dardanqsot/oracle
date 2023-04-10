@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.9.14" id="DataBindings"
+             SeparateXMLFiles="false" Package="initemployeeregisterationui" ClientType="Generic">
+  <pageMap>
+    <page path="/InitEmployeeRegisteration_TaskDetails.jspx"
+          usageId="initemployeeregisterationui_InitEmployeeRegisteration_TaskDetailsPageDef"/>
+    <page path="/InitEmployeeRegisteration_TaskNotification.jspx"
+          usageId="initemployeeregisterationui_InitEmployeeRegisteration_TaskNotificationPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="initemployeeregisterationui_InitEmployeeRegisteration_TaskDetailsPageDef"
+          path="initemployeeregisterationui.pageDefs.InitEmployeeRegisteration_TaskDetailsPageDef"/>
+    <page id="initemployeeregisterationui_InitEmployeeRegisteration_TaskNotificationPageDef"
+          path="initemployeeregisterationui.pageDefs.InitEmployeeRegisteration_TaskNotificationPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="InitEmployeeRegisterationUI_InitEmployeeRegisteration"
+        path="initemployeeregisterationui.InitEmployeeRegisterationUI_InitEmployeeRegisteration"/>
+  </dataControlUsages>
+</Application>

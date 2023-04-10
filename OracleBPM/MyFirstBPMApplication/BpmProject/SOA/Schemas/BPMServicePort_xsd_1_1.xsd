@@ -1,0 +1,34 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema xmlns:ns0="http://project1/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://project1/">
+    <xsd:complexType name="checkItemAvailability">
+        <xsd:sequence>
+            <xsd:element name="itemCode" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="qty" type="xsd:int"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="checkItemAvailabilityResponse">
+        <xsd:sequence>
+            <xsd:element name="return" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="insertNewEmployee">
+        <xsd:sequence>
+            <xsd:element name="empName" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="empPosition" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="salary" type="xsd:double" minOccurs="0"/>
+            <xsd:element name="deptName" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="updateStock">
+        <xsd:sequence>
+            <xsd:element name="itemCode" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="qty" type="xsd:int"/>
+            <xsd:element name="operation" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="checkItemAvailability" type="ns0:checkItemAvailability"/>
+    <xsd:element name="checkItemAvailabilityResponse" type="ns0:checkItemAvailabilityResponse"/>
+    <xsd:element name="insertNewEmployee" type="ns0:insertNewEmployee"/>
+    <xsd:element name="updateStock" type="ns0:updateStock"/>
+</xsd:schema>
+<!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.3.0-wls122140-b190328.0053 svn-revision#unknown. -->

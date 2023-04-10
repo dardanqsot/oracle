@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.9.14" id="keyListType"
+          Package="InitEmployeeRegisterationUI_InitEmployeeRegisteration"
+          BeanClass="InitEmployeeRegisterationUI_InitEmployeeRegisteration.keyListType" isJavaBased="false">
+  <AccessorAttribute id="key" IsCollection="true"
+                     BeanClass="InitEmployeeRegisterationUI_InitEmployeeRegisteration.keyType"
+                     CollectionBeanClass="InitEmployeeRegisterationUI_InitEmployeeRegisteration.keyType_key_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="2147483640"/>
+      <Property Name="LABEL" Value="Key"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="key"/>
+      <Property Name="targetNamespace" Value="http://xmlns.oracle.com/bpel/workflow/task"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

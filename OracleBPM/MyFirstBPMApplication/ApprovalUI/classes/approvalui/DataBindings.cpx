@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.9.14" id="DataBindings"
+             SeparateXMLFiles="false" Package="approvalui" ClientType="Generic">
+  <pageMap>
+    <page path="/ApprovalHumanTask_TaskDetails.jspx" usageId="approvalui_ApprovalHumanTask_TaskDetailsPageDef"/>
+    <page path="/ApprovalHumanTask_TaskNotification.jspx"
+          usageId="approvalui_ApprovalHumanTask_TaskNotificationPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="approvalui_ApprovalHumanTask_TaskDetailsPageDef"
+          path="approvalui.pageDefs.ApprovalHumanTask_TaskDetailsPageDef"/>
+    <page id="approvalui_ApprovalHumanTask_TaskNotificationPageDef"
+          path="approvalui.pageDefs.ApprovalHumanTask_TaskNotificationPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="ApprovalUI_ApprovalHumanTask" path="approvalui.ApprovalUI_ApprovalHumanTask"/>
+  </dataControlUsages>
+</Application>

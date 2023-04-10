@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dgm:gDiagram xmlns:dgm="http://xmlns.oracle.com/sca/soadgm">
+    <dgm:gReference name="BPMService">
+        <dgm:body borderWidth="2" arcRad="20" X="1358" Y="198" width="136" height="108">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="1348" Y="191" width="156" height="122">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="BPMService" X="-10" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://project1/#wsdl.interface(BPMService)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="27" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>insertNewEmployee</dgm:item>
+            <dgm:item>checkItemAvailability</dgm:item>
+            <dgm:item>updateStock</dgm:item>
+        </dgm:operations>
+    </dgm:gReference>
+    <dgm:gComponent name="RegisterationProcess">
+        <dgm:body borderWidth="2" arcRad="20" X="377" Y="83" width="130" height="111">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="367" Y="76" width="150" height="127">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="HumanTasks.InitEmployeeRegisteration.reference" X="120" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:outputPort name="HumanTasks.ApprovalHumanTask.reference" X="120" Y="40" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:outputPort name="Services.Externals.BPMService.reference" X="120" Y="65" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://project1/#wsdl.interface(BPMService)"/>
+        <dgm:nodeIcon URI="/oracle/bpm/fusion/soa/msg/images/bpmncomponent20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="InitEmployeeRegisteration">
+        <dgm:body borderWidth="2" arcRad="20" X="754" Y="26" width="130" height="61">
+            <dgm:borderColor r="109" g="136" b="65"/>
+            <dgm:lightBgColor r="201" g="224" b="155"/>
+            <dgm:darkBgColor r="157" g="195" b="93"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="744" Y="19" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="TaskService" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/workflow/resources/images/humantask_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="ApprovalHumanTask">
+        <dgm:body borderWidth="2" arcRad="20" X="754" Y="121" width="130" height="61">
+            <dgm:borderColor r="109" g="136" b="65"/>
+            <dgm:lightBgColor r="201" g="224" b="155"/>
+            <dgm:darkBgColor r="157" g="195" b="93"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="744" Y="114" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="TaskService" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/workflow/resources/images/humantask_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gWireLink source="RegisterationProcess/HumanTasks.InitEmployeeRegisteration.reference" target="InitEmployeeRegisteration/TaskService" width="2">
+        <dgm:gSegment X1="517" Y1="108" X2="541" Y2="108"/>
+        <dgm:gSegment X1="541" Y1="108" X2="541" Y2="51"/>
+        <dgm:gSegment X1="541" Y1="51" X2="744" Y2="51"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="RegisterationProcess/HumanTasks.ApprovalHumanTask.reference" target="ApprovalHumanTask/TaskService" width="2">
+        <dgm:gSegment X1="517" Y1="133" X2="556" Y2="133"/>
+        <dgm:gSegment X1="556" Y1="133" X2="556" Y2="146"/>
+        <dgm:gSegment X1="556" Y1="146" X2="744" Y2="146"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="RegisterationProcess/Services.Externals.BPMService.reference" target="BPMService" width="2">
+        <dgm:gSegment X1="517" Y1="158" X2="541" Y2="158"/>
+        <dgm:gSegment X1="541" Y1="158" X2="541" Y2="208"/>
+        <dgm:gSegment X1="541" Y1="208" X2="1348" Y2="208"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+</dgm:gDiagram>

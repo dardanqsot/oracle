@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Faults>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>HumanTasks/InitEmployeeRegisteration.task</file>
+      <name>HumanTasks/InitEmployeeRegisteration.task</name>
+      <fix/>
+      <msg>Error assignee not specified</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>HumanTasks/ApprovalHumanTask.task</file>
+      <name>HumanTasks/ApprovalHumanTask.task</name>
+      <fix/>
+      <msg>Error assignee not specified</msg>
+   </Fault>
+</Faults>

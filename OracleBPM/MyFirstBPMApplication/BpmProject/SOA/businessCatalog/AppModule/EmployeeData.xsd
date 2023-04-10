@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?bpmo version="12.1.3" build="00.00" fullName="AppModule.EmployeeData" modifiers="[public]"?>
+<!--########################################################################################-->
+<!--####                                                                                ####-->
+<!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
+<!--#### CHANGES TO THIS FILE MAY PRODUCE UNEXPECTED BEHAVIOR AND WOULD BE OVERWRITTEN  ####-->
+<!--####                                                                                ####-->
+<!--########################################################################################-->
+<xs:schema targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/AppModule/EmployeeData" elementFormDefault="qualified" xmlns="http://xmlns.oracle.com/bpm/bpmobject/AppModule/EmployeeData"  xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns:bpmo="http://xmlns.oracle.com/bpm/bpmobject/" >
+    <xs:complexType name="EmployeeDataType">
+        <xs:sequence>
+            <xs:element name="employeeName" nillable="true" type="xs:string"/>
+            <xs:element name="employeeDOB" nillable="true" type="xs:dateTime"/>
+            <xs:element name="employeeSalary" nillable="true" type="xs:double"/>
+            <xs:element name="employeePosition" nillable="true" type="xs:string"/>
+            <xs:element name="employeeDepartmentName" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="EmployeeData" type="EmployeeDataType"/>
+</xs:schema>

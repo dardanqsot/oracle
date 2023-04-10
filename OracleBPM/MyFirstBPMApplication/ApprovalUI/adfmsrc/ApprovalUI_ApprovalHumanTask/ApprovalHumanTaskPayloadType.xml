@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.9.14" id="ApprovalHumanTaskPayloadType"
+          Package="ApprovalUI_ApprovalHumanTask" BeanClass="ApprovalUI_ApprovalHumanTask.ApprovalHumanTaskPayloadType"
+          isJavaBased="false">
+  <Attribute Name="TestParameter" IsUpdateable="0" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Test Parameter"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="TestParameter"/>
+        <Property Name="targetNamespace" Value="http://xmlns.oracle.com/bpel/workflow/task"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <AccessorAttribute id="EmployeeData" IsCollection="true" BeanClass="ApprovalUI_ApprovalHumanTask.EmployeeDataType"
+                     CollectionBeanClass="ApprovalUI_ApprovalHumanTask.EmployeeDataType_EmployeeData_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Employee Data"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="EmployeeData"/>
+      <Property Name="targetNamespace" Value="http://xmlns.oracle.com/bpm/bpmobject/AppModule/EmployeeData"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

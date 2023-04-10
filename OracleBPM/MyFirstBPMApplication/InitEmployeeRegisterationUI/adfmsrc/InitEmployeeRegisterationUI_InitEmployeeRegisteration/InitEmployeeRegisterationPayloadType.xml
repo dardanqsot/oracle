@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.9.14" id="InitEmployeeRegisterationPayloadType"
+          Package="InitEmployeeRegisterationUI_InitEmployeeRegisteration"
+          BeanClass="InitEmployeeRegisterationUI_InitEmployeeRegisteration.InitEmployeeRegisterationPayloadType"
+          isJavaBased="false">
+  <AccessorAttribute id="EmployeeData" IsCollection="true"
+                     BeanClass="InitEmployeeRegisterationUI_InitEmployeeRegisteration.EmployeeDataType"
+                     CollectionBeanClass="InitEmployeeRegisterationUI_InitEmployeeRegisteration.EmployeeDataType_EmployeeData_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Employee Data"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="EmployeeData"/>
+      <Property Name="targetNamespace" Value="http://xmlns.oracle.com/bpm/bpmobject/AppModule/EmployeeData"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

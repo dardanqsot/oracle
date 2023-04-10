@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="12.1.3" fileRevision="20120601"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+   <component name="RegisterationProcess">
+      <topicDocumentations>
+         <topicDocumentation name="RegisterationProcess"/>
+         <topicDocumentation name="ACT2367537475138">
+            <labels>
+               <label locale="en">Init Registeration</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23683801904693">
+            <labels>
+               <label locale="en">ApproveSalary</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23683818919061">
+            <labels>
+               <label locale="en">InsertNewEmployee</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="EVT23675374751294">
+            <labels>
+               <label locale="en">Start</label>
+            </labels>
+         </topicDocumentation>
+         <topicDocumentation name="EVT23675374751249">
+            <labels>
+               <label locale="en">End</label>
+            </labels>
+         </topicDocumentation>
+         <topicDocumentation name="GTW23683799990460">
+            <labels>
+               <label locale="en">Salary GT 50k</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="GTW23683813387511">
+            <labels>
+               <label locale="en">Approved</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf23675374751371"/>
+         <topicDocumentation name="sf23675374751338"/>
+         <topicDocumentation name="sf23683801158488"/>
+         <topicDocumentation name="sf23683808520124">
+            <labels>
+               <label locale="en"></label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf23683810839987"/>
+         <topicDocumentation name="sf23683813973461"/>
+         <topicDocumentation name="sf23683820722827"/>
+         <topicDocumentation name="sf23683821090389">
+            <labels>
+               <label locale="en"></label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+      </topicDocumentations>
+   </component>
+</processDocumentation>

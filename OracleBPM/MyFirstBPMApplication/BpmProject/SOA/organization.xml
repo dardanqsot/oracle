@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:organization xmlns:ns0="http://xmlns.oracle.com/bpm/organization" xmlns:ns1="http://xmlns.oracle.com/bpm/lpg/peopleQuery" xmlns:ns2="http://xmlns.oracle.com/bpm/identity" xmlns:ns3="http://xmlns.oracle.com/bpel/workflow/taskQuery" xmlns:ns4="http://xmlns.oracle.com/bpel/workflow/task">
+   <ns0:updateExistingObjects>false</ns0:updateExistingObjects>
+   <ns0:organizationalUnits/>
+   <ns0:applicationRoles>
+      <ns0:applicationRole id="BpmProject.ProcessOwner" isProcessRole="true">
+         <ns2:name>BpmProject.Process Owner</ns2:name>
+         <ns0:processRole id="ProcessOwner" name="Process Owner"/>
+      </ns0:applicationRole>
+      <ns0:applicationRole id="BpmProject.ProcessReviewer" isProcessRole="true">
+         <ns2:name>BpmProject.Process Reviewer</ns2:name>
+         <ns0:processRole id="ProcessReviewer" name="Process Reviewer"/>
+      </ns0:applicationRole>
+      <ns0:applicationRole id="BpmProject.Role" isProcessRole="true">
+         <ns2:name>BpmProject.Role</ns2:name>
+         <ns0:processRole id="Role" name="Role"/>
+      </ns0:applicationRole>
+      <ns0:applicationRole id="BpmProject.ApprovalRole" isProcessRole="true">
+         <ns2:name>BpmProject.ApprovalRole</ns2:name>
+         <ns0:member type="USER">
+            <ns0:name>approveuser</ns0:name>
+         </ns0:member>
+         <ns0:processRole id="ApprovalRole" name="ApprovalRole"/>
+      </ns0:applicationRole>
+      <ns0:applicationRole id="BpmProject.InitRegisterationRole" isProcessRole="true">
+         <ns2:name>BpmProject.InitRegisterationRole</ns2:name>
+         <ns0:member type="USER">
+            <ns0:name>inituser</ns0:name>
+         </ns0:member>
+         <ns0:processRole id="InitRegisterationRole" name="InitRegisterationRole"/>
+      </ns0:applicationRole>
+   </ns0:applicationRoles>
+   <ns0:applicationRoleOrgUnitCalendarAssociations/>
+   <ns0:participantPropertiesList/>
+   <ns0:holidayRules/>
+   <ns0:calendarRules/>
+   <ns0:businessParameters/>
+</ns0:organization>
